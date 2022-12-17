@@ -23,9 +23,10 @@ public class VehiculeServiceImpl implements VehiculeService {
                 vehiculeDTO.isOwner(),
                 vehiculeDTO.isValidCertificate(),
                 vehiculeDTO.getCarBrand(),
-                vehiculeDTO.getImmatricule(),
-                vehiculeDTO.getContrat(),
-                vehiculeDTO.getAssurance()
+                vehiculeDTO.getImmatricule()
+                // ,
+                // vehiculeDTO.getContrat(),
+                // vehiculeDTO.getAssurance()
         );
         return vehiculeRepository.save(vehicule);
     }

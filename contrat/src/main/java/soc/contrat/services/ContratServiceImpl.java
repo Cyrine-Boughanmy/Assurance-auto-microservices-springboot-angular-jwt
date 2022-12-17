@@ -30,8 +30,9 @@ public class ContratServiceImpl implements ContratService{
         Contrat contrat = new Contrat(
                 contratDto.getNum(),
                 contratDto.getDateDeb(),
-                contratDto.getDateFin(),
-                contratDto.getAssure()
+                contratDto.getDateFin()
+                // ,
+                // contratDto.getAssure()
         );
         return contratRepository.save(contrat);
     }

@@ -1,6 +1,6 @@
 package soc.contrat.services.Dto;
 
-import soc.assure.models.Assure;
+// import soc.assure.models.Assure;
 import lombok.*;
 import java.util.Date;
 
@@ -17,6 +17,6 @@ public class ContratDto {
 
     private Date dateFin;
 
-    private Assure assure;
+    // private Assure assure;
 
 }

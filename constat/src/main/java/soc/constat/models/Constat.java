@@ -41,12 +41,12 @@ public class Constat {
     private Number drivingLicenseNumber;
     private Date drivingLicenseDate;
 
-    @DocumentReference
-    private Assure assure;
+    // @DocumentReference
+    // private Assure assure;
 
 //vehicule
-    @DocumentReference
-    private Vehicule vehicule;
+    // @DocumentReference
+    // private Vehicule vehicule;
     private String directionFrom;
     private String directionTo;
 

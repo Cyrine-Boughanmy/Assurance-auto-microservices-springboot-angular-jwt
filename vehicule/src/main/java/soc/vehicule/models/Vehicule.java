@@ -22,11 +22,11 @@ public class Vehicule {
     private String carBrand;
     private String immatricule;
 
-    @DocumentReference
-    private Contrat contrat;
+    // @DocumentReference
+    // private Contrat contrat;
 
-    @DocumentReference
-    private Assurance assurance;
+    // @DocumentReference
+    // private Assurance assurance;
 
 
 

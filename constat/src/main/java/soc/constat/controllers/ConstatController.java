@@ -17,17 +17,17 @@ import java.util.List;
 @RequestMapping("/constat")
 public class ConstatController {
 
-    @Autowired
-    ConstatServiceImpl constatService;
+    // @Autowired
+    // ConstatServiceImpl constatService;
 
     @Autowired
     ConstatRepository constatRepository;
 
-    @Autowired
-    NotificationController notificationController;
+    // @Autowired
+    // NotificationController notificationController;
 
     @PostMapping(value = "/Add")
-    public Constat addConstat(@RequestBody ConstatDTO constatDTO){
+    public Constat addConstat(@RequestBody ConstatDto constatDTO){
         Notification notifications =new Notification(0,"");
         notifications.setMessage( " Nouveau constat ");
         notificationController.getNotification(notifications);

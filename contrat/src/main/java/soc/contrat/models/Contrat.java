@@ -21,6 +21,6 @@ public class Contrat {
 
     private Date dateFin;
 
-    @DocumentReference
-    private Assure assure;
+    // @DocumentReference
+    // private Assure assure;
 }

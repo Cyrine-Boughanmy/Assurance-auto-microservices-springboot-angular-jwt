@@ -1,7 +1,7 @@
 package soc.vehicule.services.Dto;
 
-import soc.vehicule.models.Assurance;
-import soc.vehicule.models.Contrat;
+// import soc.vehicule.models.Assurance;
+// import soc.vehicule.models.Contrat;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,6 +21,6 @@ public class VehiculeDto {
     private String carBrand;
     private String immatricule;
 
-    private Contrat contrat;
-    private Assurance assurance;
+    // private Contrat contrat;
+    // private Assurance assurance;
 }

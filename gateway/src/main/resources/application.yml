@@ -1,0 +1,87 @@
+server:
+  port: 8880
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+
+management:
+  endpoint.gateway.enabled: true
+  endpoints.web.exposure.include: gateway
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/api/auth/**
+          filter:
+            - AuthGlobaleFilter
+        # - id: expert-service
+        #   uri: lb://expert-service
+        #   predicates:
+        #     - Path=/mission/**
+        #   filter:
+        #     - AuthGlobaleFilter
+        - id: assure-service
+          uri: lb://assure-service
+          predicates:
+                - Path=/assure/**
+          filter:
+            - AuthGlobaleFilter
+        - id: vehicule-service
+          uri: lb://vehicule-service
+          predicates:
+            - Path=/vehicule/**
+          filter:
+            - AuthGlobaleFilter
+        - id: constat-service
+          uri: lb://constat-service
+          predicates:
+            - Path=/constat/**
+          filter:
+            - AuthGlobaleFilter
+        - id: contrat-service
+          uri: lb://contrat-service
+          predicates:
+            - Path=/contrat/**
+          filter:
+            - AuthGlobaleFilter
+        - id: assurance-service
+          uri: lb://assurance-service
+          predicates:
+            - Path=/assurance/**
+          filter:
+            - AuthGlobaleFilter
+        # - id: assure-service
+        #   uri: lb://assure-service
+        #   predicates:
+        #     - Path=/expert/**
+        #   filter:
+        #     - AuthGlobaleFilter
+        # - id: agent-service
+        #   uri: lb://agent-service
+        #   predicates:
+        #         - Path=/agent/**
+
+
+

@@ -4,8 +4,6 @@ import soc.assurance.models.Assurance;
 import soc.assurance.services.Dto.AssuranceDto;
 import java.util.List;
 
-
-
 public interface AssuranceService {
 
     public Assurance addAssurance(AssuranceDto assuranceDTO);
