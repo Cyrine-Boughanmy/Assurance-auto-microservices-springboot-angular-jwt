@@ -2,7 +2,7 @@ package soc.contrat.controllers;
 
 import soc.contrat.models.Contrat;
 import soc.contrat.services.ContratServiceImpl;
-import soc.contrat.services.Dto.ContratDTO;
+import soc.contrat.services.Dto.ContratDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -17,7 +17,7 @@ public class ContratController {
 
 
     @PostMapping(value = "/Add")
-    public Contrat addContrat(@RequestBody ContratDTO contratDTO){
+    public Contrat addContrat(@RequestBody ContratDto contratDTO){
 
         return contratService.addContrat(contratDTO) ;
     }

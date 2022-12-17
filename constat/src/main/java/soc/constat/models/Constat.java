@@ -20,11 +20,10 @@ public class Constat {
     private String idc;
     private Boolean typee;
     private Date date;
-    private Double lat;
-    private Double lng;
+    // private Double lat;
+    // private Double lng;
     private Boolean injury;
     private Boolean materieldamage;
-    private String sketchImage;
 
 //temoins
     private String witnessName;
@@ -56,29 +55,29 @@ public class Constat {
 
     private String observation;
 
-//CircumstancesList
-    private List<Boolean> circonstance = new ArrayList<>();
+// //CircumstancesList
+//     private List<Boolean> circonstance = new ArrayList<>();
 
-    private String signatureImage;
-    private String damagePointImage;
-    private String directionImage;
-
-
-    private String etat;
-    private String degats;
-
-    private String imageAv;
-    //private List<String> imageAv = new ArrayList<>();
-    private String imageAp;
-    private String devis;
-    private String facture;
+//     private String signatureImage;
+//     private String damagePointImage;
+//     private String directionImage;
 
 
-    private String mode;
-    private String montant;
+//     private String etat;
+//     private String degats;
 
-    private Date rdvDate;
-    private String rdvLieu;
-    private String rdvNote;
+//     private String imageAv;
+//     //private List<String> imageAv = new ArrayList<>();
+//     private String imageAp;
+//     private String devis;
+//     private String facture;
+
+
+//     private String mode;
+//     private String montant;
+
+//     private Date rdvDate;
+//     private String rdvLieu;
+//     private String rdvNote;
 
 }

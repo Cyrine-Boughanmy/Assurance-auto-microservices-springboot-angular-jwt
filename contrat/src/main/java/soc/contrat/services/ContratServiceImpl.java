@@ -2,7 +2,7 @@ package soc.contrat.services;
 
 import soc.contrat.models.Contrat;
 import soc.contrat.repositories.ContratRepository;
-import soc.contrat.services.Dto.ContratDTO;
+import soc.contrat.services.Dto.ContratDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;

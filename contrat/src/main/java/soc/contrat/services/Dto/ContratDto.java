@@ -1,6 +1,6 @@
 package soc.contrat.services.Dto;
 
-import soc.contrat.models.Assure;
+import soc.assure.models.Assure;
 import lombok.*;
 import java.util.Date;
 
