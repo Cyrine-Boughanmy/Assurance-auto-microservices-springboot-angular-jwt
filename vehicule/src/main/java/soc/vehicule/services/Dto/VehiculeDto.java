@@ -14,9 +14,9 @@ import lombok.Setter;
 public class VehiculeDto {
 
     private String idv;
-    private boolean company;
+    private String company;
     private boolean assigned;
-    private boolean owner;
+    private String owner;
     private boolean validCertificate;
     private String carBrand;
     private String immatricule;

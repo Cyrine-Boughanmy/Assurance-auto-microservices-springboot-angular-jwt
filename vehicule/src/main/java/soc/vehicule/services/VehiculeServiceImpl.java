@@ -18,9 +18,9 @@ public class VehiculeServiceImpl implements VehiculeService {
     public Vehicule addVehicule(VehiculeDto vehiculeDTO) {
         Vehicule vehicule = new Vehicule(
                 vehiculeDTO.getIdv(),
-                vehiculeDTO.isCompany(),
+                vehiculeDTO.getCompany(),
                 vehiculeDTO.isAssigned(),
-                vehiculeDTO.isOwner(),
+                vehiculeDTO.getOwner(),
                 vehiculeDTO.isValidCertificate(),
                 vehiculeDTO.getCarBrand(),
                 vehiculeDTO.getImmatricule()
