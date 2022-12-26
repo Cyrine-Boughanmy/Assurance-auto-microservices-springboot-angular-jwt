@@ -4,9 +4,15 @@ import soc.assure.models.*;
 import soc.assure.repositories.AssureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.List;
 
 @Service
+@AllArgsConstructor
+@Slf4j
 public class AssureServiceImpl implements AssureService{
 
     @Autowired

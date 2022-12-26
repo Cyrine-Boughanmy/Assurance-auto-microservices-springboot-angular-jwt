@@ -3,7 +3,10 @@ package soc.contrat.controllers;
 import soc.contrat.models.Contrat;
 import soc.contrat.services.ContratServiceImpl;
 import soc.contrat.services.Dto.ContratDto;
+import soc.contrat.services.Dto.ResponseDto;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -34,6 +37,11 @@ public class ContratController {
     public Contrat findByNum(@PathVariable ("num") String num) {
 
         return contratService.findByNum(num);
+    }
+    @GetMapping("{num}")
+    public ResponseEntity<ResponseDto> getContrat(@PathVariable("num") String num){
+        ResponseDto responseDto = contratService.getContrat(num);
+        return ResponseEntity.ok(responseDto);
     }
 
 }

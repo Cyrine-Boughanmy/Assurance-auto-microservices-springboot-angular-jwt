@@ -16,7 +16,8 @@ public class ContratDto {
     private Date dateDeb;
 
     private Date dateFin;
+    
+    private String assureId;
 
-    // private Assure assure;
 
 }

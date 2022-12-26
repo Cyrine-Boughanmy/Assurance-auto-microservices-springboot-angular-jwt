@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 import java.util.Date;
 
+@Data
 @ToString
 @Getter
 @Setter
@@ -20,6 +21,8 @@ public class Contrat {
     private Date dateDeb;
 
     private Date dateFin;
+    
+    private String assureId;
 
     // @DocumentReference
     // private Assure assure;
